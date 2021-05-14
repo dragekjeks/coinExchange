@@ -2,8 +2,29 @@ import React from 'react';
 import './App.css';
 import Coin from './components/Coin/Coin';
 import AccountBalance from './components/AccountBalance/AccountBalance'
+import {useMoralis} from "react-moralis";
+
 
 function App() {
+
+  const {authenticate, isAuthenticated, logout} = useMoralis();
+
+  if(isAuthenticated){
+    return(
+    <div className="App">
+      <header className="App-header">
+        <a href="app.js">
+          <img src="CharitableLogo.png" alt="Charitable logo" className="App-logo"></img>
+        </a>
+        <h1 className="App-title">
+          Charitable
+        </h1>
+        <button onClick={() => logout()} className="connect-wallet">Logout</button>
+      </header>
+    </div>
+    );
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -13,6 +34,7 @@ function App() {
         <h1 className="App-title">
           Charitable
         </h1>
+        <button onClick={() => authenticate()} className="connect-wallet">Connect wallet</button>
       </header>
       <AccountBalance amount={10000}/>
       <table className="coin-table">

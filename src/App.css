@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: rgb(58, 58, 153);
+  background-color: rgb(35, 35, 44);
   color: #cccccc;
 }
 
@@ -14,6 +14,19 @@
   height: 8rem;
   pointer-events: none;
   margin: 15px;
+  width: 80px;
+  height: 80px;
+}
+
+.connect-wallet{
+  background-color: grey;
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 12px;
+  margin-left: auto;
+  margin-right: 20px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -23,8 +36,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 20vh;
+  background-color: #31343a;
+  min-height: 15vh;
   display: flex;
   flex-direction: row;
   align-items: center;
