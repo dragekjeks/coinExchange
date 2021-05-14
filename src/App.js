@@ -7,7 +7,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <a href="app.js">
         <img src="CharitableLogo.png" alt="Charitable logo" className="App-logo"></img>
+        </a>
         <h1 className="App-title">
           Charitable
         </h1>

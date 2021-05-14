@@ -13,6 +13,7 @@
 .App-logo {
   height: 8rem;
   pointer-events: none;
+  margin: 15px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -33,8 +34,7 @@
 }
 
 .App-title{
-  font-size: 4rem;
-
+  font-size: 3rem;
 }
 
 .App-link {
