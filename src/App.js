@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Coin from './components/Coin/Coin';
 import AccountBalance from './components/AccountBalance/AccountBalance'
@@ -8,9 +7,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} alt="React logo" className="App-logo"></img>
+        <img src="CharitableLogo.png" alt="Charitable logo" className="App-logo"></img>
         <h1 className="App-title">
-          Coin Exchange
+          Charitable
         </h1>
       </header>
       <AccountBalance amount={10000}/>
@@ -29,7 +28,6 @@ function App() {
           <Coin name="Ripple" ticker="XRP" price={1.5}/>
         </tbody>
       </table>
-
     </div>
   );
 }
